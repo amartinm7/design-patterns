@@ -4,6 +4,7 @@
 Design Patterns
 
 - https://sourcemaking.com/
+- https://www.tutorialspoint.com/design_pattern/index.htm
 
 ## create a new spring project from the scratch
 First of all, you can generate the scaffolding of this project using the INITIALIZR tool: 
