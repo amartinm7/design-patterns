@@ -48,4 +48,5 @@ docker rm $(docker ps -a -q)
 ### Reactive principles: manifesto
 
 - https://www.reactivemanifesto.org
+
 ![reactive-design](_media/reactive-traits.svg)
