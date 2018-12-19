@@ -25,3 +25,27 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
 
+### SOLID Principles
+
+- S stands for Single responsability or expert: the main objective of a class is unique.
+- O stands for Open Close principle: open to extend and close to change or modify.
+- L stands for Liskov sustitution: a child class can be pass to another class as a parameter where the base clase is used.
+- I stands for Interface Segregation: use several interfaces in order to reuse them instead of one which is less resuseable.
+- D stands for Depency inyection: low coupling, inject the classes in order to avoid to know how are created and having less dependencies.
+
+### GRASP Principles
+
+- Low coupling, high cohesion
+- Controller for the UI
+- Creator for the factory pattern
+- information expert or single responsability
+- pure fabrication or service in the domain-driven design
+- indirection or dependency injection
+- polymorphism
+
+### domain-driven design
+
+### Reactive principles: manifesto
+
+- https://www.reactivemanifesto.org
+![reactive-design](_media/reactive-traits.svg)
