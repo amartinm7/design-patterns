@@ -1,7 +1,10 @@
 package org.amm.design.patterns.model;
 
-public abstract class Shape implements Cloneable {
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public abstract class Shape implements Cloneable {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Shape.class);
     private String id;
     protected String type;
 

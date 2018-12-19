@@ -1,12 +1,15 @@
 package org.amm.design.patterns.creational.prototype;
 
 import org.amm.design.patterns.model.Shape;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Clone the objects. In this example to do that, we are creating the objects to clone and
  * we are storing in a cache. When we are going to create a new object, we clone the existing ones.
  */
 public class Demo {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Demo.class);
     public static void main(String[] args) {
         ShapeCache.loadCache();
 

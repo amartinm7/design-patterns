@@ -13,14 +13,14 @@ https://start.spring.io/
 ## Create a gradle project
 ```
 gradle wrapper
-./gradlew build
+./gradlew build copyDependencies
 ```
 ## Dockerize the app: create a docker image and run the project from command line
 From the project root folder exec the commands to create a docker image and run it:
 
 ```bash
-docker build -f docker/Dockerfile . -t designPatterns
-docker run -p 8080:8080 greetings
+docker build -f docker/Dockerfile . -t designpatterns
+docker run -p 8080:8080 designpatterns
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```

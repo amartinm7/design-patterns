@@ -1,8 +1,11 @@
 package org.amm.design.patterns.creational.factory;
 
 import org.amm.design.patterns.model.Drawable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Demo {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Demo.class);
     public static void main(String[] args) {
         ShapeFactory shapeFactory = new ShapeFactory();
 

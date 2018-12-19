@@ -4,11 +4,13 @@ import org.amm.design.patterns.model.Circle;
 import org.amm.design.patterns.model.Rectangle;
 import org.amm.design.patterns.model.Shape;
 import org.amm.design.patterns.model.Square;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 
 public class ShapeCache {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(ShapeCache.class);
     private static HashMap<String, Shape> shapeMap  = new HashMap<String, Shape>();
 
     public static Shape getShape(String shapeId) {

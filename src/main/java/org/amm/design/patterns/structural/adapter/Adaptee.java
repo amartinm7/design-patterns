@@ -1,8 +1,11 @@
 package org.amm.design.patterns.structural.adapter;
 
-public class Adaptee {
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public class Adaptee {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Adaptee.class);
     public void doThat(int x, int y, int z){
-        System.out.println(String.format("doing that (%d,%d,%d)...", x, y, z));
+        LOGGER.info("doing that ({},{},{})...", x, y, z);
     }
 }
