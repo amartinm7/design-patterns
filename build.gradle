@@ -19,8 +19,22 @@ repositories {
 }
 
 dependencies {
-    compile 'ch.qos.logback:logback-classic'
-    compile 'org.slf4j:jul-to-slf4j'
-    compile 'org.slf4j:log4j-over-slf4j'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'org.slf4j:jul-to-slf4j:1.7.25'
+    compile 'org.slf4j:log4j-over-slf4j:1.7.25'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'org.amm.design.patterns.Main'
+        )
+    }
+}
+
+task copyDependencies(type: Copy,dependsOn:[build,jar]) {
+    from configurations.runtime
+    into "$buildDir/libs"
 }
