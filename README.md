@@ -61,7 +61,7 @@ docker rm $(docker ps -a -q)
 - Observer/observable: publish/subscriber
 - State: every child represents an state, the state of the system can change in every moment when the states objects are changing
 - Strategy: change de behaviour dinamically. similar to state pattern
-- template method: similar to factory method
+- template method: in the parent class, create a 'script' method for calling a sequence of methods. Define these methods as abstract. Every child class has to implement the abstract methods, so when the 'script' method is executed the behaviour is different o  
 - visitor: two hierarchies to combine them. 
 
 # Design Principles
