@@ -97,6 +97,13 @@ Model from the point of view of the stakeholders: product owner, stakeholders an
 - Minimum dependencies on infrastructure frameworks
 - Design with POJO's 'Plain Old Java Objects' without any framework dependency
 
+### Architecture layers
+
+- User interface: provides the info to the user, and handle the communication with the user and the application.
+- Application: coordinates the elements of the application.
+- Domain: data model itself with the logic (POJO's)
+- Infrastructure: provides communication. Implements the persistence and handle the libraries. 
+
 ### Domain-Driven Design: Benefits
 
 - better code
