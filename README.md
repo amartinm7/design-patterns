@@ -64,9 +64,9 @@ docker rm $(docker ps -a -q)
 - template method: similar to factory method
 - visitor: two hierarchies to combine them. 
 
+# Design Principles
 
-
-### SOLID Principles
+## SOLID Principles
 
 - S stands for Single responsability or expert: the main objective of a class is unique.
 - O stands for Open Close principle: open to extend and close to change or modify.
@@ -74,7 +74,7 @@ docker rm $(docker ps -a -q)
 - I stands for Interface Segregation: use several interfaces in order to reuse them instead of one which is less resuseable.
 - D stands for Depency inyection: low coupling, inject the classes in order to avoid to know how are created and having less dependencies.
 
-### GRASP Principles
+## GRASP Principles
 
 - Low coupling, high cohesion
 - Controller for the UI
@@ -84,9 +84,9 @@ docker rm $(docker ps -a -q)
 - indirection or dependency injection
 - polymorphism
 
-## domain-driven
+## Domain-Driven Design
 
-### domain-driven design: characteristics
+### Domain-Driven Design: Characteristics, key points
 
 - Being aligned with the business model, strategies and processes. Model from the business perspective, no from a technical point of view.
 Model from the point of view of the stakeholders: product owner, stakeholders and developers. A semantic model.
@@ -97,7 +97,7 @@ Model from the point of view of the stakeholders: product owner, stakeholders an
 - Minimum dependencies on infrastructure frameworks
 - Design with POJO's 'Plain Old Java Objects' without any framework dependency
 
-## domain-driven design: benefits
+### Domain-Driven Design: Benefits
 
 - better code
 - agility
@@ -109,12 +109,24 @@ Model from the point of view of the stakeholders: product owner, stakeholders an
 - a common language
 - business necessities are oriented: a common language to know how the business operates instead of how to software operates
  
- 
-  
-
-
-### Reactive principles: manifesto
-
-- https://www.reactivemanifesto.org
+## Reactive principles: manifesto
 
 ![reactive-design](_media/reactive-traits.svg)
+
+Reference:
+- https://www.reactivemanifesto.org
+
+key points:
+- Maintenance
+- Extensible
+- Responsive
+- Elastic
+- Resilient
+- Message Driven: async messages
+
+
+
+
+
+
+
