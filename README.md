@@ -79,12 +79,39 @@ docker rm $(docker ps -a -q)
 - Low coupling, high cohesion
 - Controller for the UI
 - Creator for the factory pattern
-- information expert or single responsability
+- information expert or single responsibility
 - pure fabrication or service in the domain-driven design
 - indirection or dependency injection
 - polymorphism
 
-### domain-driven design
+## domain-driven
+
+### domain-driven design: characteristics
+
+- Being aligned with the business model, strategies and processes. Model from the business perspective, no from a technical point of view.
+Model from the point of view of the stakeholders: product owner, stakeholders and developers. A semantic model.
+- Being isolated from other domains and layers in the business
+- Be loosely designed with no dependencies on the layers of the application on either side of the domain layer. For instance the UI layer use the value objects instead of the entities themselves.
+- Being reusable to avoid duplicated models
+- Be an abstract and cleanly separated layer to create easier maintenance, testing and versioning.
+- Minimum dependencies on infrastructure frameworks
+- Design with POJO's 'Plain Old Java Objects' without any framework dependency
+
+## domain-driven design: benefits
+
+- better code
+- agility
+- better software architecture
+- better communication
+- stay focus in the solution
+- pure flexible
+- better tracking
+- a common language
+- business necessities are oriented: a common language to know how the business operates instead of how to software operates
+ 
+ 
+  
+
 
 ### Reactive principles: manifesto
 
