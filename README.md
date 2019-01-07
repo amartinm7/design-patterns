@@ -19,10 +19,13 @@ gradle wrapper
 From the project root folder exec the commands to create a docker image and run it:
 
 ```bash
+killall Docker && open /Applications/Docker.app
 docker build -f docker/Dockerfile . -t designpatterns
 docker run -p 8080:8080 designpatterns
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
+docker images
+docker rmi PID
 ```
 
 # Patterns
