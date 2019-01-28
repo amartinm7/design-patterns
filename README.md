@@ -135,7 +135,14 @@ key points:
 - Message Driven: async messages
 
 
-
+## broker or agent, proxy and brigde
+Broker in the middle in the man. It's a dealer. 
+In the cloud architecture, we can have a broker which is storing a list of services or servers, like a discovery service. 
+So in this picture, the discovery service is the **__broker__**. 
+If we have several discovery services and one discovery service needs a call a service registered in another discovery service then 
+we need a **__brigde__** to communicate both brokers.
+The **__proxy__** is the piece of code to act as client of the broker. In this way the client of the broker can work without knowing the broker details. 
+So the proxy can adapt the calls to the broker and the responses of this, between the client and the broker 
 
 
 
